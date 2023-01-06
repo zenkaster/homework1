@@ -1,0 +1,236 @@
+*{
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin: 0;
+    padding:0;
+    /* flex-wrap: wrap; */
+}
+
+.snow-container{
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.snow{
+    display: flex;
+    gap:4px;
+    height: 100%;
+}
+.snow span{
+    width: 15px;
+    height: 15px;
+    background-color: rgb(160, 232, 242);
+    border-radius: 100%;
+    box-shadow: 0 0 15px rgb(127, 186, 194),
+    0 0 50px rgb(160, 232, 242),
+    0 0 105px rgb(160, 185, 242);
+    animation: snowing linear infinite;
+    animation-duration: calc(100s/var(--i));
+    /* position: absolute; */
+}
+.snow span:nth-child(even){
+    background-color: rgb(161, 181, 227);
+    box-shadow: 0 0 15px rgb(127, 186, 194),
+    0 0 50px rgb(160, 232, 242),
+    0 0 105px rgb(160, 185, 242);
+}
+@keyframes snowing {
+    0%{
+        transform: translatey(0vh) scale(0);
+    }
+    100%{
+        transform: translatey(90vh) scale(0.5);
+    }
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.header{
+    margin-top: 10px;
+    height: 10%;
+    width:90%;
+    background-color:#e5f0fe;
+    position: fixed;
+    display: flex;
+    padding: 0 40px;
+}
+.site-lg{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.navigation{
+    width: 65%;
+    height: 100%;
+}
+.nav{
+    width: 100%;
+    height: 100%;
+}
+.nav-bar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 50px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.nav-bar a{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.nav-bar a:hover{
+    color:#0057e1;
+}
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fp{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fp-block{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+}
+.fp-block h2{
+    font-size: 60px;
+}
+.fp-block p{
+    font-size: 20px;
+    width: 80%;
+}
+.btn{
+    width: 148px;
+    height: 46px;
+    font-size: 20px;
+    border: 2px solid black;
+    background-color: transparent;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #000;
+    color: white;
+}
+
+.about{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+}
+.about-block{
+    width: 40%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    text-align: center;
+}
+.about img{
+    max-width: 45%;
+}
+.about-block h2{
+    font-size: 60px;
+}
+.about-block p{
+    max-width: 400px;
+    font-size: 20px;
+}
+
+.features{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 150px;
+}
+.title-feat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:30px;
+}
+.title-feat h2{
+    font-size: 60px;
+}
+.title-feat p{
+    font-size: 20px;
+    width: 480px;
+}
+.list-feat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+.lis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.lis h1{
+    font-size: 60px;
+}
+.lis h2{
+    font-size: 24px;
+}
+.lis p{
+    font-size: 18px;
+    width: 225px;
+}
+
+.projects{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+.title-proj h1{
+    font-size: 60px;
+}
+.img-proj{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
