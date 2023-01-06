@@ -140,7 +140,6 @@
 }
 
 .about{
-    width: 100vw;
     height: 90vh;
     display: flex;
     justify-content: center;
@@ -171,13 +170,13 @@
 }
 
 .features{
-    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     gap: 150px;
+    margin-bottom: 200px;
 }
 .title-feat{
     display: flex;
@@ -198,6 +197,7 @@
     align-items: center;
     justify-content: center;
     gap: 80px;
+    flex-wrap: wrap;
 }
 .lis{
     display: flex;

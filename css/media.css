@@ -1,0 +1,124 @@
+@media screen and (max-width:376px) {
+    .navigation{
+        display: none;
+    }
+    .site-lg{
+        width: auto;
+        height: auto;
+    }
+    .header{
+        justify-content: center;       
+        position: unset; 
+        height: 80px;
+    }
+    .fp{
+        margin-top: 50px;
+        height: auto;
+    }
+    .fp-block{
+        width: auto;
+    }
+    .fp-block h2{
+        font-size: 40px;
+    }
+    .about{
+        margin-top: 70px;
+        height: auto;
+        flex-flow: column wrap;
+
+    }
+    .about-block{
+        width: auto;
+    }
+    .about-block h2{
+        font-size: 50px;
+    }
+    .about-block p{
+        font-size: 18px;
+        padding: 5px;
+    }
+    .about img{
+        padding: 10px;
+        max-width: 80%;
+    }
+    .features{
+        margin-top: 70px;
+        width: auto;
+        margin-bottom: 0;
+        gap: 30px;
+    }
+    .title-feat h2{
+        font-size: 50px;
+    }
+    .title-feat p{
+        width: auto;
+    }
+    .list-feat{
+        gap:40px;
+        flex-direction: column; 
+    }
+    .projects{
+        margin-top: 70px;
+        gap: 50px;
+    }
+    .title-proj h1{
+        font-size: 50px;
+    }
+    .img-proj{
+        width: auto;
+    }
+    .img-proj img{
+        max-width: 40%;
+    }
+    .contact{
+        width: auto;
+    }
+    .title-cont h1{
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+    .title-cont p{
+        font-size: 18px;
+    }
+    .form-cont{
+        width: 80%;
+        gap: 25px;
+        padding: 0;
+    }
+    .form-cont h5{
+        width: auto;
+        font-size: 24px;
+    }
+    #msg{
+        width: 230px;
+        height: 150px;
+        margin-bottom: 30px;
+    }
+    .submit{
+        width: 230px;
+    }
+    .subscribe{
+        width: 100%;
+        text-align: center;
+    }
+    .subscribe h1{
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+    .subscribe label{
+        font-size: 18px;
+    }
+    .inp-btn{
+        flex-direction: column;
+        width: auto;
+    }
+    .inp-btn input{
+        width: 350px;
+        height: 45px;
+    }
+    .subsc{
+        margin-top: 10px;
+        width: 200px;
+        height: 46px;
+    }
+}
