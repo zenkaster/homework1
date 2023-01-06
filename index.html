@@ -119,11 +119,11 @@
             <div class="navigation">
                 <nav class="nav">
                     <ul class="nav-bar">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -131,7 +131,7 @@
 
 
         <main class="main">
-            <div class="fp">
+            <div class="fp" id="home">
                 <div class="fp-block">
                 <h2>I'M A TITLE <br> CLICK HERE TO EDIT ME</h2>
                 <p>I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p>
@@ -139,7 +139,7 @@
                 </div>
             </div>
 
-            <div class="about">
+            <div class="about" id="about">
                 <div class="about-block">
                     <h2>ABOUT</h2>
                     <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page.</p>
@@ -148,7 +148,7 @@
                 <img src="https://static.wixstatic.com/media/ea71bb_53df16d984ac4b7fb9a2f2de3be94542~mv2.png/v1/fill/w_870,h_692,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/ea71bb_53df16d984ac4b7fb9a2f2de3be94542~mv2.png" alt="#">
             </div>
             
-            <div class="features">
+            <div class="features" id="features">
                 <div class="title-feat">
                     <h2>FEATURES</h2>
                     <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font</p>
@@ -172,7 +172,7 @@
                 </div>
             </div>
 
-            <div class="projects">
+            <div class="projects" id="projects">
                 <div class="title-proj"><h1>Projects</h1></div>
                 <div class="img-proj">
                     <img src="https://static.wixstatic.com/media/ea71bb_106c66fbe4c945cb978864db8e491d7b~mv2.png/v1/fill/w_418,h_418,q_90/ea71bb_106c66fbe4c945cb978864db8e491d7b~mv2.webp" alt="#">
@@ -184,12 +184,25 @@
                     <img src="https://static.wixstatic.com/media/ea71bb_106c66fbe4c945cb978864db8e491d7b~mv2.png/v1/fill/w_418,h_418,q_90/ea71bb_106c66fbe4c945cb978864db8e491d7b~mv2.webp" alt="#">
                     <img src="https://static.wixstatic.com/media/ea71bb_106c66fbe4c945cb978864db8e491d7b~mv2.png/v1/fill/w_418,h_418,q_90/ea71bb_106c66fbe4c945cb978864db8e491d7b~mv2.webp" alt="#">
                 </div>
-
-
-
-
             </div>
 
+
+            <div class="contact" id="contact">
+                <div class="title-cont"><h1>Contact</h1>
+                <address>Address: 500 Terry Francois St. SF, CA 94158</address>
+                <p>Email: info@mysite.com</p>
+                <p>Tel: 123-456-7890</p>
+                </div>
+                <div class="form-cont">
+                    <h5>You can also contact us by using this form:</h5>
+                    <label>First name <sup>*</sup><input type="text" required></label>
+                    <label>Last name <sup>*</sup><input type="text" required></label>
+                    <label>Email <sup>*</sup><input type="email" required></label>
+                    <label>Subject <sup>*</sup><input type="text" required></label>
+                    <label class="big">Leave us a message... <sup>*</sup><input type="text" required></label>
+                </div>
+                <button class="btn">Submit</button>
+            </div>
 
         </main>
 
